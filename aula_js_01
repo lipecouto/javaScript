@@ -1,0 +1,22 @@
+class Pessoa {
+    idPessoa;
+    nomeCompleto;
+    idade;
+    anoNascimento;
+    endereco;
+
+    // o construtor em javascript vai obrigar que, sempre que a pessoa for declarada, as informações sejam passadas.
+    constructor(nome, idade, endereco, anoNascimento){
+        this.nomeCompleto = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+        this.anoNascimento = anoNascimento;
+        this.id = 1; 
+    }
+}
+
+
+
+const {gets, print} = require('./funcoes_aux.js')
+
+print(gets())

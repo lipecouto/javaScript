@@ -1,0 +1,409 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pokemons a{
+    text-decoration: none;
+}
+
+.pokemons a:hover{
+    filter: brightness(1.1);
+}
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+.pokemon {
+    display: grid;
+    flex-direction: column;
+    margin: 0.25rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: .725rem;
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: .25rem;
+    text-transform: capitalize;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.sectionDetail {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: space-between;
+    transition: 1.5s;
+    
+}
+
+.sectionDetail .listaDetalhe{
+    list-style: none;
+    
+}
+
+.sectionDetail .headerDetalhes{
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 20rem;
+    text-decoration: none;
+
+}
+
+.sectionDetail .headerDetalhes .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48;
+  padding: 2rem 0rem 0rem 2rem;
+  font-size: 34px;
+
+}
+
+.sectionDetail .headerDetalhes h1{
+    display: grid;
+    flex-direction: column;
+    padding: 1rem 3.25rem 1rem 2rem;
+    width: 100vw;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.xxx{
+    padding: 0;
+    margin: 0;
+}
+
+.sectionDetail .imgdiv{
+    display: grid;
+    padding: 15rem 0rem 0rem 0rem;
+    width: 100vw;
+    justify-items: center;
+    position: absolute;
+}
+
+.imgdiv img{
+    display: flex;
+    align-self: center;
+    position: sticky;
+    max-width: 100%;
+    height: 17rem;
+    z-index: 3;
+}
+
+
+.sectionDetail  .detalhes{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    position: sticky;
+    z-index: 2;
+    list-style: none;
+    top: 100rem;
+    height: 60vh;
+    background-color: white;
+    border-radius: 6rem 6rem 0rem 0rem;
+    list-style: none;
+}
+
+.detalheol{
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    column-gap: 7rem;
+    padding-top: 3rem;
+}
+
+.sectionDetail .detalhes ol li{
+    padding-left: 2.5rem;
+    font-weight: bold;
+    opacity: 50%;
+
+}
+
+.sectionDetail .listaStatus{
+    list-style: none;
+    font-weight: bold;
+}
+
+
+.sectionDetail .detalhes .listaStatus .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sectionDetail .detalhes .listaStatus .info .infodetail{
+    display: grid;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.sectionDetail .detalhes .listaStatus .info .infodetail li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;    
+}
+
+.sectionDetail .detalhes .listaStatus .info .infodetail li span{
+    display: inline-flex;
+    margin: 0;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    padding-left: 1rem;
+    width: 12rem;
+}
+
+.sectionDetail .detalhes .listaStatus .info .infodetail li div{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.sectionDetail .detalhes .listaStatus .info .infodetail li progress{
+    appearance: none;
+}
+
+progress{
+    padding: 0rem 0rem 0rem 2rem;
+    width: 35rem;
+}
+
+.progress[value]::-webkit-progress-value {
+    background-image: none;
+    background-color: #10cc2f;
+    border-radius: 3rem; 
+    background-size: 35px 10px, 100% 100%, 100% 100%;
+  }
+
+
+.progress[value]::-webkit-progress-bar {
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    width: 12rem;
+    border-radius: 3rem; 
+    height: 10px;
+    align-self: center;
+}
+
+.progressred[value]::-webkit-progress-bar {
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    width: 12rem;
+    border-radius: 3rem; 
+    height: 10px;
+    align-self: center;
+  }
+
+.progressred[value]::-webkit-progress-value {
+    background-image: none;
+    background-color: #ff0000;
+    border-radius: 3rem; 
+    background-size: 35px 10px, 100% 100%, 100% 100%;
+  }
+
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sectionDetail .detalhes ol {
+        list-style: none;
+        font-size: 2rem;
+        display: inline-flex;
+    }
+
+    .sectionDetail .headerDetalhes h1 {
+        display: grid;
+        flex-direction: column;
+        width: 100vw;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 902px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .sectionDetail .detalhes ol {
+        margin-top: 1rem;
+        list-style: none;
+        font-size: 2rem;
+        display: flex;
+    }
+
+    .sectionDetail .headerDetalhes .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+        padding: 2rem 0rem 0rem 2rem;
+        font-size: 48px;
+    }
+
+    .sectionDetail .headerDetalhes h1 {
+        display: grid;
+        flex-direction: column;
+        padding: 2rem 3.25rem 8rem 2rem;
+        width: 100vw;
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+    
+    .sectionDetail .imgdiv {
+        display: grid;
+        padding: 1rem 0rem 0rem 0rem;
+        width: 100vw;
+        justify-items: center;
+        position: static;
+    }
+
+    .imgdiv img {
+        display: flex;
+        align-self: center;
+        position: sticky;
+        max-width: 100%;
+        height: 30rem;
+        z-index: 3;
+    }
+
+    .sectionDetail .detalhes ol li {
+        padding: 3rem 10rem 0rem 15rem;
+        font-weight: bold;
+        opacity: 50%;
+    }
+
+}
